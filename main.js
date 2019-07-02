@@ -204,7 +204,7 @@ let code_photo = `
   width: 90px;
   position: absolute;
   right: 0px;
-  top: -10px;
+  top: 10px;
 }
 /* 让多余的照片隐藏吧~ */
 #information {
