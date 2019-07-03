@@ -12,7 +12,6 @@ Github: https://github.com/wubo49494
     - 了解生命周期钩子函数 created、mounted、updated 的特性和使用
 - HTML5, CSS3 & JavaScript
     - 能够使用原生 JavaScript 独立制作精美网页
-    - 掌握 HTML5 如 canvas 、 audio 等语义化标签等
     - 掌握 CSS3 动画、过渡、弹性盒子布局、等响应式设计常用技术
 - 其他
     - 熟悉 Git 常用命令、代码仓库协同工作流程等
@@ -21,19 +20,23 @@ Github: https://github.com/wubo49494
     - 理解 MVC 、 MVVM 思想，掌握 HTTP 基础等
     - 使用 PHP + Apache + Mysql 搭建博客后台管理项目
     - 使用 Webpack 打包项目的经验，了解其管理资源的方法，如 css-loader 、 file-loader 等
+    - 对代码格式有轻微强迫症，现在一直在养成Standard Style的代码风格
 
 ## 项目经验
 ### 高德API-梅州市便民出行应用
-- 关键词：\`JavaScript\`、\`高德地图\`、\`Web服务\`、\`API\`、\`HTML、CSS\`[源码链接](https://github.com/wubo49494/Gaode-API)
+- 关键词：\`JavaScript\`、\`高德地图\`、\`Web服务\`、\`API\`
 - 描述：该项目使用了高德地图JavaScript API来完成一个单页面应用，通过原生 JS 操作 DOM 元素来完成请求高德地图 API 并把返回来的数据渲染到网页上
+- [预览](https://wubo49494.github.io/Gaode-API/) | [博客讲解](https://juejin.im/post/5d174be95188254e79360542) | [Git源码](https://github.com/wubo49494/Gaode-API)
 
 ### 百秀-博客后台管理系统
-- 关键词：\`PHP\`、\`Apache\`、\`Mysql\`、\`jQuery\`、\`Pagination\`[源码链接](https://github.com/wubo49494/Baixiu)
+- 关键词：\`PHP\`、\`Apache\`、\`Mysql\`、\`jQuery\`、\`Pagination\`
 - 描述：该项目由的功能有管理员添加/登录、已发表评论的批准/删除/拒绝完成状态。其中已发表文章还用 PHP 完成了分页功能，在文章分类页面对表单的四种请求都用 PHP 做了不同的处理
+- [博客讲解](https://juejin.im/post/5d18a091f265da1bb277470a) | [Git源码](https://github.com/wubo49494/Baixiu)
 
 ### 全栈开发美团网
-- 关键词：\`Vue\`、\`Node.js\`、\`Element-ui\`、\`Koa2\`、\`MongoDB\`、\`Nuxt.js\`、\`SSR渲染\`[源码链接](https://github.com/wubo49494/mt-app) 
+- 关键词：\`Vue\`、\`Node.js\`、\`Element-ui\`、\`Koa2\`、\`MongoDB\`、\`Nuxt.js\`
 - 描述：此项目为一个全栈开发项目，结合多个技术把美团网具体开发出来，页面为 Element-ui 布局，通过高德地图Web服务 API 获取相应的数据，注册页面通过 Nodemailer 发送验证码，成功后加密保存到 MongoDB 中，登录时使用 Passport 验证,并使用 Redis 操作 Session 保存账户。
+- [博客讲解](https://juejin.im/post/5d176d52e51d4556bc066fbe) | [Git源码](https://github.com/wubo49494/mt-app) 
 
 ## 教育经历
 ### 嘉应学院
@@ -171,9 +174,13 @@ let code_beautify_resume = `
 #works {
   position: relative;
 }
-#works ul > li:first-child a {
+#works > ul {
+  position: relative;
+}
+#works > ul > li:nth-child(3) {
   position: absolute;
   right: 0px;
+  top: 0px;
 }
 
 /* 调整“教育经历”中时间的位置 */
@@ -350,7 +357,7 @@ function addAndAdjustAvatar() {
   })
 }
 function showDownloadButton() {
-  $('#options').css({ 'width': '23%' })
+  $('#options').css({ 'width': '32%' })
   $('a.downloadResume').addClass('show')
   $('#options').append($('a.downloadResume'))
 }
@@ -383,7 +390,7 @@ function showFinalResult() {
   code_style.innerHTML = code_ready + code_marked + code_beautify_resume + code_photo
   code_body.scrollTop = code_body.scrollHeight
   window.clearTimeout(codeInputTimeoutID)
-  $('#options').css({ 'width': '23%' })
+  $('#options').css({ 'width': '32%' })
   $('a.downloadResume').addClass('show')
   $('#options').append($('a.downloadResume'))
 }
