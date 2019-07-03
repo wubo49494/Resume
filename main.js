@@ -1,7 +1,7 @@
 let resume = `# 吴博 | 前端开发工程师
 微信/电话: 13232049494 | wubo49494@foxmail.com | 深圳 | 2019应届本科毕业生 
 Github: https://github.com/wubo49494 
-动态简历：https://wubo49494.github.io/Resume/
+在线简历: https://wubo49494.github.io/Resume/
 技术博客: https://juejin.im/user/5c9261c46fb9a070d013f8bc/posts
 
 ## 专业技能
