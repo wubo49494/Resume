@@ -67,10 +67,9 @@
 #works > ul{
   position: relative;
 }
-#works > ul > li:nth-child(3) {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+#works > ul > li:nth-child(1) a {
+  float: right;
+  margin-left: 10px;
 }
 
 #education p { top: 40px; }

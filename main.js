@@ -24,19 +24,16 @@ Github: https://github.com/wubo49494
 
 ## 项目经验
 ### 高德API-梅州市便民出行应用
-- 关键词：\`JavaScript\`、\`高德地图\`、\`Web服务\`、\`API\`
+- 关键词：\`JavaScript\`、\`高德地图\`、\`Web服务\`、\`API\`     [Git源码](https://github.com/wubo49494/Gaode-API)[博客讲解](https://juejin.im/post/5d174be95188254e79360542)[预览](https://wubo49494.github.io/Gaode-API/)
 - 描述：该项目使用了高德地图JavaScript API来完成一个单页面应用，通过原生 JS 操作 DOM 元素来完成请求高德地图 API 并把返回来的数据渲染到网页上
-- [预览](https://wubo49494.github.io/Gaode-API/) | [博客讲解](https://juejin.im/post/5d174be95188254e79360542) | [Git源码](https://github.com/wubo49494/Gaode-API)
 
 ### 百秀-博客后台管理系统
-- 关键词：\`PHP\`、\`Apache\`、\`Mysql\`、\`jQuery\`、\`Pagination\`
+- 关键词：\`PHP\`、\`Apache\`、\`Mysql\`、\`jQuery\`、\`Pagination\`[Git源码](https://github.com/wubo49494/Baixiu)[博客讲解](https://juejin.im/post/5d18a091f265da1bb277470a) 
 - 描述：该项目由的功能有管理员添加/登录、已发表评论的批准/删除/拒绝完成状态。其中已发表文章还用 PHP 完成了分页功能，在文章分类页面对表单的四种请求都用 PHP 做了不同的处理
-- [博客讲解](https://juejin.im/post/5d18a091f265da1bb277470a) | [Git源码](https://github.com/wubo49494/Baixiu)
 
 ### 全栈开发美团网
-- 关键词：\`Vue\`、\`Node.js\`、\`Element-ui\`、\`Koa2\`、\`MongoDB\`、\`Nuxt.js\`
+- 关键词：\`Vue\`、\`Node.js\`、\`Element-ui\`、\`Koa2\`、\`MongoDB\`、\`Nuxt.js\`[Git源码](https://github.com/wubo49494/mt-app)[博客讲解](https://juejin.im/post/5d176d52e51d4556bc066fbe) 
 - 描述：此项目为一个全栈开发项目，结合多个技术把美团网具体开发出来，页面为 Element-ui 布局，通过高德地图Web服务 API 获取相应的数据，注册页面通过 Nodemailer 发送验证码，成功后加密保存到 MongoDB 中，登录时使用 Passport 验证,并使用 Redis 操作 Session 保存账户。
-- [博客讲解](https://juejin.im/post/5d176d52e51d4556bc066fbe) | [Git源码](https://github.com/wubo49494/mt-app) 
 
 ## 教育经历
 ### 嘉应学院
@@ -177,10 +174,9 @@ let code_beautify_resume = `
 #works > ul {
   position: relative;
 }
-#works > ul > li:nth-child(3) {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+#works > ul > li:nth-child(1) a {
+  float: right;
+  margin-left: 5px;
 }
 
 /* 调整“教育经历”中时间的位置 */
