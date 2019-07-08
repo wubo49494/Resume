@@ -12,11 +12,11 @@ Github: https://github.com/wubo49494
     - 了解生命周期钩子函数 created、mounted、updated 的特性和使用
 - HTML5, CSS3 & JavaScript
     - 能够使用原生 JavaScript 独立制作精美网页
-    - 掌握 CSS3 动画、过渡、弹性盒子布局、等响应式设计常用技术
+    - 了解 CSS3 动画、过渡、弹性盒子布局、等响应式设计常用技术
 - 其他
     - 熟悉 Git 常用命令、代码仓库协同工作流程等
     - 熟悉 jQuery 常用 API ，如 DOM 操作、特效、事件等。会使用$.ajax()异步请求。
-    - 掌握 Scss 的使用，理解嵌套规则、父选择器 & 、变量、混合等的使用
+    - 熟悉 Scss 的使用，理解嵌套规则、父选择器 & 、变量、混合等的使用
     - 理解 MVC 、 MVVM 思想，掌握 HTTP 基础等
     - 使用 PHP + Apache + Mysql 搭建博客后台管理项目
     - 使用 Webpack 打包项目的经验，了解其管理资源的方法，如 css-loader 、 file-loader 等
