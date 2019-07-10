@@ -61,9 +61,9 @@ body {
 /* 给代码加个边框 */
 #code_body {
   width: 100%;
-  border: 1px solid #CFD8DC;
+  border: 0.1rem solid #CFD8DC;
   background: #CFD8DC;
-  padding: 16px;
+  padding: 1rem;
   overflow: auto;
 }
 
@@ -92,13 +92,14 @@ body {
 /* 让代码框腾出一些的位置给我的简历框 */
 
 #options {
-  width: 23%;
+  height: 20rem;
 }
+
 /* 准备一个白板 */
 #paper {
   flex: 1;
   background: #fdfdfd;
-  margin: 16px;
+  margin: 1.5rem auto;
   overflow: auto;
   white-space: pre-wrap;
 }
@@ -119,7 +120,7 @@ let code_beautify_resume = `
 /* 调整我的简历，让它变得再好看一点 */
 #paper {
   white-space: unset;
-  padding: 0 32px;
+  padding: 0 3rem;
   font-size: 14px;
 }
 #paper a {
@@ -354,7 +355,7 @@ function addAndAdjustAvatar() {
   })
 }
 function showDownloadButton() {
-  $('#options').css({ 'width': '32%' })
+  // $('#options').css({ 'width': '100%' })
   $('a.downloadResume').addClass('show')
   $('#options').append($('a.downloadResume'))
 }
@@ -387,7 +388,7 @@ function showFinalResult() {
   code_style.innerHTML = code_ready + code_marked + code_beautify_resume + code_photo
   code_body.scrollTop = code_body.scrollHeight
   window.clearTimeout(codeInputTimeoutID)
-  $('#options').css({ 'width': '32%' })
+  $('#options').css({ 'height': '20rem' })
   $('a.downloadResume').addClass('show')
   $('#options').append($('a.downloadResume'))
 }

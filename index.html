@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="prism/prism.css">
-  <link rel="stylesheet" href="style.css" media="screen">
+
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px)" href="style.css">
+
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 768px)" href="m-style.css"/>
+
   <link rel="stylesheet" href="print.css" media="print">
   <title>吴博的简历</title>
   <style id="code_style" media="screen"></style>
@@ -21,6 +25,7 @@
         <span id="speed_status">🚲</span>
       </div>
     </div>
+    
     <div id="paper"></div>
     <div class="skipper">
       <button id="skip_inputResume" class="blinkingButton">跳过简历书写 >></button>
@@ -30,10 +35,16 @@
     <img class="avatar" src="./images/avatar.png" alt="头像" />
     <a class="downloadResume" href="前端-吴博-2019应届本科.pdf" target="_blank" download="前端-吴博-2019应届本科">下载 PDF 简历</a>
   </div>
+  <!-- <script src="main.js"></script> -->
+  <script src="judge.js"></script>
+  <script>
+    browserRedirect(); //调用判断当前访问页面是手机端还是移动端
+  </script>
   <script src="prism/prism.js"></script>
   <script src="marked.min.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
-  <script src="main.js"></script>
+
+
 </body>
 
 </html>
