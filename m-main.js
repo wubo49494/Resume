@@ -1,5 +1,6 @@
 let resume = `# 吴博 | 前端开发工程师
-微信/电话: 13232049494 | wubo49494@foxmail.com | 深圳 | 2019应届本科毕业生 
+微信/电话: 13232049494 | wubo49494@foxmail.com
+深圳 | 2019应届本科毕业生 
 Github: https://github.com/wubo49494 
 在线简历: https://wubo49494.github.io/Resume/
 技术博客: https://juejin.im/user/5c9261c46fb9a070d013f8bc/posts
@@ -24,16 +25,19 @@ Github: https://github.com/wubo49494
 
 ## 项目经验
 ### 高德API-梅州市便民出行应用
-- 关键词：\`JavaScript\`、\`高德地图\`、\`Web服务\`、\`API\`     [Git源码](https://github.com/wubo49494/Gaode-API)[博客讲解](https://juejin.im/post/5d174be95188254e79360542)[预览](https://wubo49494.github.io/Gaode-API/)
+- 关键词：\`JavaScript\`、\`高德地图\`、\`Web服务\`、\`API\`     
 - 描述：该项目使用了高德地图JavaScript API来完成一个单页面应用，通过原生 JS 操作 DOM 元素来完成请求高德地图 API 并把返回来的数据渲染到网页上
+- [Git源码](https://github.com/wubo49494/Gaode-API) | [博客讲解](https://juejin.im/post/5d174be95188254e79360542) | [预览](https://wubo49494.github.io/Gaode-API/)
 
 ### 百秀-博客后台管理系统
-- 关键词：\`PHP\`、\`Apache\`、\`Mysql\`、\`jQuery\`、\`Pagination\`[Git源码](https://github.com/wubo49494/Baixiu)[博客讲解](https://juejin.im/post/5d18a091f265da1bb277470a) 
+- 关键词：\`PHP\`、\`Apache\`、\`Mysql\`、\`jQuery\`、\`Pagination\`
 - 描述：该项目由的功能有管理员添加/登录、已发表评论的批准/删除/拒绝完成状态。其中已发表文章还用 PHP 完成了分页功能，在文章分类页面对表单的四种请求都用 PHP 做了不同的处理
+- [Git源码](https://github.com/wubo49494/Baixiu) | [博客讲解](https://juejin.im/post/5d18a091f265da1bb277470a) 
 
 ### 全栈开发美团网
-- 关键词：\`Vue\`、\`Node.js\`、\`Element-ui\`、\`Koa2\`、\`MongoDB\`、\`Nuxt.js\`[Git源码](https://github.com/wubo49494/mt-app)[博客讲解](https://juejin.im/post/5d176d52e51d4556bc066fbe) 
+- 关键词：\`Vue\`、\`Node.js\`、\`Element-ui\`、\`Koa2\`、\`MongoDB\`、\`Nuxt.js\`
 - 描述：此项目为一个全栈开发项目，结合多个技术把美团网具体开发出来，页面为 Element-ui 布局，通过高德地图Web服务 API 获取相应的数据，注册页面通过 Nodemailer 发送验证码，成功后加密保存到 MongoDB 中，登录时使用 Passport 验证,并使用 Redis 操作 Session 保存账户。
+- [Git源码](https://github.com/wubo49494/mt-app) | [博客讲解](https://juejin.im/post/5d176d52e51d4556bc066fbe) 
 
 ## 教育经历
 ### 嘉应学院
@@ -43,7 +47,7 @@ Github: https://github.com/wubo49494
 `
 
 let code_ready = `/*
- * 嗨，我是吴博。
+ * 你好，我是吴博。
  * 我想用代码给你展示一下我的个人简历～
  * 灵感来自：http://strml.net
  * 
@@ -92,19 +96,19 @@ body {
 /* 让代码框腾出一些的位置给我的简历框 */
 
 #options {
-  height: 20rem;
+  height: 10rem;
 }
 
 /* 准备一个白板 */
 #paper {
   flex: 1;
   background: #fdfdfd;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   overflow: auto;
   white-space: pre-wrap;
 }
 
-/* 接下来，请看右边 */
+/* 接下来，请看下面 */
 
 `
 
@@ -120,18 +124,18 @@ let code_beautify_resume = `
 /* 调整我的简历，让它变得再好看一点 */
 #paper {
   white-space: unset;
-  padding: 0 3rem;
-  font-size: 14px;
+  padding: 1rem;
+  font-size: 0.6em;
 }
 #paper a {
   color: #455A64;
 }
 #paper ul {
-  padding-left: 20px;
+  padding-left: 1rem;
 }
 /* 让每个模块上下间隔明显一点 */
 #paper > div {
-  margin: 28px 0;
+  margin: 1rem 0;
 }
 
 /* 接下来是精细的调整 */
@@ -196,7 +200,6 @@ let code_beautify_resume = `
   top: 40px;
 }
 
-
 /* 接下来添加个头像吧！ */
 `
 
@@ -209,7 +212,7 @@ let code_photo = `
   width: 90px;
   position: absolute;
   right: 0px;
-  top: 10px;
+  top: 5px;
 }
 /* 让多余的照片隐藏吧~ */
 #information {
@@ -356,8 +359,8 @@ function addAndAdjustAvatar() {
 }
 function showDownloadButton() {
   // $('#options').css({ 'width': '100%' })
-  $('a.downloadResume').addClass('show')
-  $('#options').append($('a.downloadResume'))
+  $('#downloadDiv').addClass('show')
+  // $('#options').append($('a.downloadResume'))
 }
 
 function skipResumeInput() {
@@ -388,7 +391,7 @@ function showFinalResult() {
   code_style.innerHTML = code_ready + code_marked + code_beautify_resume + code_photo
   code_body.scrollTop = code_body.scrollHeight
   window.clearTimeout(codeInputTimeoutID)
-  $('#options').css({ 'height': '20rem' })
-  $('a.downloadResume').addClass('show')
-  $('#options').append($('a.downloadResume'))
+  // $('#options').css({ 'height': '10rem' })
+  $('#downloadDiv').addClass('show')
+  // $('#options').append($('a.downloadResume'))
 }

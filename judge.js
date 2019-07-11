@@ -31,15 +31,15 @@ function browserRedirect() {
   } else {
     //手机端
     //加载css
-    var oMeta = document.createElement('meta');
-    oMeta.name = 'viewport';
-    oMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no';
-    document.getElementsByTagName('head')[0].appendChild(oMeta);
-    var linkNode = document.createElement("link");
-    linkNode.setAttribute("rel", "stylesheet");
-    linkNode.setAttribute("type", "text/css");
-    linkNode.setAttribute("href", "m-style.css");
-    document.head.appendChild(linkNode);
+    // var oMeta = document.createElement('meta');
+    // oMeta.name = 'viewport';
+    // oMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no';
+    // document.getElementsByTagName('head')[0].appendChild(oMeta);
+    // var linkNode = document.createElement("link");
+    // linkNode.setAttribute("rel", "stylesheet");
+    // linkNode.setAttribute("type", "text/css");
+    // linkNode.setAttribute("href", "m-style.css");
+    // document.head.appendChild(linkNode);
     //加载js
     var scriptNode = document.createElement("script");
     scriptNode.setAttribute("type", "text/javascript");

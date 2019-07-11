@@ -1,5 +1,4 @@
-@media screen and (max-device-width: 830px) {
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,22 +9,22 @@
     width: 100%;
     column-count: 1;
     column-gap: 0;
-    justify-content: center;
-    margin: 1rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
   }
 
   #options {
     width: 100%;
-    height: 30rem;
+    height: 100%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
+
   #paper {
     width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
   #options #code_body {
@@ -35,7 +34,7 @@
   #options #speed_btn {
     z-index: 3;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 1rem;
     transition: all 0.2s;
     user-select: none;
@@ -47,7 +46,7 @@
   #options #speed_status {
     transition: all 0.2s;
     font-size: 24px;
-    margin-left: 10px;
+    margin-left: 1rem;
   }
 
   #options #description {
@@ -93,26 +92,34 @@
     width: 0;
   }
 
-  .downloadResume {
+
+  #downloadDiv {
+    width: 100%;
+    height: 5rem;
     display: none;
     opacity: 0;
-    font-size: 14px;
+    border: 1px solid #CFD8DC;
+    transition: all 0.2s display 10ms;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 5em;
+    margin: 1rem auto;
+    margin-bottom: 0;
+  }
+  #downloadDiv > a {
+    font-size: 1em;
     font-weight: bold;
     color: #CFD8DC;
-    text-align: center;
-    line-height: 58px;
-    margin-top: 14px;
-    border-radius: 5px;
-    border: 1px solid #CFD8DC;
-    transition: all 0.2s, display 10ms;
+
   }
 
-  .downloadResume:hover {
+  #downloadDiv:hover {
     box-shadow: 0 1px 6px 1px #cfdbdcbb;
   }
 
-  .downloadResume.show {
-    display: inline-block;
+  #downloadDiv.show {
+    display: block;
     opacity: 1;
   }
 
@@ -193,5 +200,4 @@
       box-shadow: 0 0 1px 0px #CFD8DC;
     }
   }
-}
 
