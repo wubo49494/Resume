@@ -209,7 +209,7 @@ let code_photo = `
   position: relative;
 }
 #information .avatar {
-  width: 80px;
+  width: 70px;
   position: absolute;
   right: 0px;
   top: 5px;
