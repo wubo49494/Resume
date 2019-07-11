@@ -93,7 +93,7 @@
   }
 
 
-  #downloadDiv {
+  .downloadResume {
     width: 100%;
     font-size: 1em;
     font-weight: bold;
@@ -113,11 +113,11 @@
     text-decoration: none;
   }
 
-  #downloadDiv:hover {
+  .downloadResume:hover {
     box-shadow: 0 1px 6px 1px #cfdbdcbb;
   }
 
-  #downloadDiv.show {
+  .downloadResume.show {
     display: block;
     opacity: 1;
   }

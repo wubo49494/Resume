@@ -360,7 +360,7 @@ function addAndAdjustAvatar() {
 }
 function showDownloadButton() {
   // $('#options').css({ 'width': '100%' })
-  $('#downloadDiv').addClass('show')
+  $('.downloadResume').addClass('show')
   // $('#options').append($('a.downloadResume'))
 }
 
@@ -393,6 +393,6 @@ function showFinalResult() {
   code_body.scrollTop = code_body.scrollHeight
   window.clearTimeout(codeInputTimeoutID)
   // $('#options').css({ 'height': '10rem' })
-  $('#downloadDiv').addClass('show')
+  $('.downloadResume').addClass('show')
   // $('#options').append($('a.downloadResume'))
 }
