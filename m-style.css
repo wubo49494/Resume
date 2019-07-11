@@ -110,6 +110,7 @@
     margin: 1rem auto;
     margin-bottom: 0;
     display: none;
+    text-decoration: none;
   }
 
   #downloadDiv:hover {
