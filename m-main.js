@@ -47,7 +47,7 @@ Github: https://github.com/wubo49494
 `
 
 let code_ready = `/*
- * 你好，我是吴博。
+ * 嗨，你好~我是吴博。
  * 我想用代码给你展示一下我的个人简历～
  * 灵感来自：http://strml.net
  * 

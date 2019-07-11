@@ -95,6 +95,9 @@
 
   #downloadDiv {
     width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    color: #CFD8DC;
     height: 5rem;
     display: none;
     opacity: 0;
@@ -106,12 +109,7 @@
     line-height: 5em;
     margin: 1rem auto;
     margin-bottom: 0;
-  }
-  #downloadDiv > a {
-    font-size: 1em;
-    font-weight: bold;
-    color: #CFD8DC;
-
+    display: none;
   }
 
   #downloadDiv:hover {
